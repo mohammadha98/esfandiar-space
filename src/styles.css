@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.img_bachground{
+    background-image: url('/image/1729025617867.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.box_shadow{
+    box-shadow: 0 7px 16px rgba(0, 0, 0, 0.5);
+}
+.box_shadow2{
+    box-shadow: -4px -10px 14px #323232, 4px 12px 13px #101010;
+}
+@layer components {
+    /* .content {
+      @apply hidden;
+    }
+    .content.active {
+      @apply block;
+    } */
+  
+    .tab-button.active a {
+      @apply bg-red-700 ;
+    }
+  }

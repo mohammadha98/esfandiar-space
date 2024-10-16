@@ -1,0 +1,38 @@
+ <!-- about me -->
+ <div class="">
+    <h1 class="text-4xl mb-5 font-bold">About Me</h1>
+    <p class="leading-8 text-xl mb-11 mt-6 text-justify">
+      I am an astronomer specializing in the evolution of planets and stars. My research focuses on exploring the
+      characteristics of planets orbiting other stars and comprehending the evolution and dynamical measurements
+      of planets and stars. I work with data from various telescopes and databases, including TESS, Gaia, ASAS-SN,
+      SIMBAD, ETD, VSX, and VizieR. My objective is to make progress on the age-old question of whether there are
+      planets capable of supporting life.
+    </p>
+    <p class="leading-8 text-xl mb-11 mt-6 text-justify">
+      I have a master's degree in applied mathematics. Currently, I am seeking a PhD program to deepen my
+      expertise in astronomy, with a focus on using new technologies and methodologies to model and analyze
+      astronomical data. I am interested in applying artificial intelligence and machine learning to enhance data
+      analysis in research.
+    </p>
+    <p class="leading-8 text-xl mb-11 mt-6 text-justify">
+      Born and raised on this "pale blue dot," I see the world as part of a vast, interconnected universe that
+      transcends borders and differences. Just as science seeks to bridge quantum mechanics and relativity, we
+      must strive for unity in equity, inclusion, and diversity. In nature, diversity is not just a feature but a
+      driving force behind adaptation and progress. By embracing diversity, we foster the creativity and
+      resilience needed to push the boundaries of knowledge and human potential.
+    </p>
+    
+    <!-- img6 -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12 child:bg-white child:w-full ">
+      
+     @for (item of images; track $index) {
+      <div class="group relative rounded-lg overflow-hidden box_shadow2">
+        <img class="w-full" [src]="item.url" alt="">
+        <div
+          class="absolute top-0 bottom-0 left-0 right-0 bg-color_bg/50 transition-all delay-100 opacity-0 group-hover:opacity-100">
+        </div>
+      </div>
+      }
+      
+    </div>
+  </div>

@@ -1,0 +1,45 @@
+<main class="">
+    <section class="container my-20">
+      <div class="grid lg:grid-cols-7 grid-cols-1 gap-5 ">
+
+        <div class="bg-color_bg rounded-lg box_shadow fixed bottom-0 left-0 right-0 lg:sticky p-4 lg:top-10 lg:h-fit z-40 overflow-auto">
+          <ul
+            class="flex items-center justify-center flex-row lg:flex-col  text-white buttonWrapper lg:min-w-full min-w-[600px]">
+            <li class="w-full h-20 mb-2 tab-button cursor-pointer " routerLinkActive="active" routerLink="/about-me">
+              <a class=" rounded-md transition-all ease-in w-full h-full flex items-center justify-center">About Me</a>
+            </li>
+            <li class="w-full h-20 mb-2 tab-button cursor-pointer" routerLinkActive="active" routerLink="/cv">
+              <a
+                class="hover:bg-red-500 transition-all ease-in rounded-md w-full h-full flex items-center justify-center">Curriculum Vitae</a>
+            </li>
+            <li class="w-full h-20 mb-2 tab-button cursor-pointer" routerLinkActive="active" routerLink="/papers">
+              <a
+                class="hover:bg-red-500 transition-all ease-in rounded-md w-full h-full flex items-center justify-center">Publications</a>
+            </li>
+            <li class="w-full h-20 mb-2 tab-button cursor-pointer text-center" routerLinkActive="active" routerLink="/videos">
+              <a
+                class="hover:bg-red-500 transition-all ease-in rounded-md w-full h-full flex items-center justify-center">International
+                Presentations</a>
+            </li>
+            <li class="w-full h-20 mb-2 tab-button cursor-pointer" routerLinkActive="active" routerLink="/gallery">
+              <a
+                class="hover:bg-red-500 transition-all ease-in rounded-md w-full h-full flex items-center justify-center">Gallery</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-color_bg rounded-lg box_shadow col-span-6 px-8 pb-16 pt-8 text-zinc-200 content ">
+
+            <router-outlet></router-outlet>
+        </div>
+
+
+        
+       
+        
+        
+
+
+      </div>
+    </section>
+  </main>

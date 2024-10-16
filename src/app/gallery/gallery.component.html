@@ -1,0 +1,53 @@
+<!-- gallery -->
+<div class="">
+    <h1 class="text-4xl mb-10 font-bold">Gallery</h1>
+    <div class="text-xl font-bold">
+      <h2>Hobbies</h2>
+    </div>
+    <p class="leading-8 text-xl mb-11 mt-6 text-justify">
+      My hobbies include composing music and playing the piano, which inspire me and break down mental barriers,
+      allowing me to feel as though I’m floating in space. Another passion of mine, closely linked to my love for
+      astronomy, is traveling. This began with my search for better, darker skies, and has led me to explore
+      Iran’s
+      vast arid and desert regions, where the clear, light-pollution-free skies offer the perfect conditions for
+      stargazing. My travels have shown me that learning is a lifelong journey fueled by curiosity and
+      exploration.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12 child:w-full">
+      <!-- 1 -->
+       @for (item of images; track $index) {
+
+           <div class="group relative overflow-hidden rounded-xl shadow-lg transform transition-all duration-700 hover:scale-105 hover:shadow-2xl hover:rotate-1">
+             <img [src]="item.url" [alt]="item.alt"
+               class="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110 group-hover:rotate-3">
+             <div
+               class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black opacity-0 group-hover:opacity-90 transition-opacity duration-700">
+               <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+                
+                 <button (click)="openModal(item.url)" class="px-6 py-2 bg-white text-black font-bold rounded-full hover:bg-gray-300 transition-colors duration-300">
+                   مشاهده بیشتر
+                 </button>
+               </div>
+             </div>
+           </div>
+       }
+     
+
+     
+
+
+      <!-- مودال -->
+       @if (isModalOpen) {
+
+        <div class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+            <div class="relative bg-white rounded-lg p-4 w-full">
+              <button class="absolute top-2 right-2 text-black font-bold" (click)="closeModal()">✕</button>
+              <div class="flex items-center justify-center">
+                <img [src]="modalImageUrl" alt="Modal Image" class="max-w-full max-h-screen p-2 rounded-2xl" />
+              </div>
+            </div>
+          </div>
+       }
+
+    </div>
+  </div>
