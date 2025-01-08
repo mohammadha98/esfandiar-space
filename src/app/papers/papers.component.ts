@@ -26,7 +26,7 @@ export class PapersComponent {
             system with a 21.3% fill-out factor and estimated absolute parameters using Gaia EDR3 parallax.`
     },
     {
-      img:'/image/Ephemeris_Updates_for_Seven_Selected_HATNet_Survey_Transiting_Exoplanets.jpg',
+      img:'/image/Period-Luminosity Relationship for δ Scuti Stars Revisited.png',
       link:'https://iopscience.iop.org/article/10.1088/1674-4527/ad1b0f',
       title:'Period-Luminosity Relationship for δ Scuti Stars Revisited',
       description:`  We analyzed 2375 δ Scuti stars using Gaia DR3 parallaxes, calculating their pulsation modes and
