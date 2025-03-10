@@ -10,6 +10,12 @@ import { Component } from '@angular/core';
 export class PapersComponent {
   Papers=[
     {
+      img:'/image/new-paper.jpeg',
+      link:'https://doi.org/10.1093/mnras/staf356',
+      title:'Study on the Physical Parameters of 18 Contact Binary Stars',
+      description:`We analyze 18 W Ursae Majoris-type binaries using TESS, Gaia, and ASAS-SN data. This study included the largest sample of its type of binaries, making it a valuable resource for future research. We also explored part of the process of estimating absolute parameters using the Gaia DR3 parallax. `
+    },
+    {
       img:'/image/Ephemeris_Updates_for_Seven_Selected_HATNet_Survey_Transiting_Exoplanets.jpg',
       link:'https://link.springer.com/article/10.1007/s10511-023-09794-y',
       title:'Ephemeris Updates for Seven Selected HATNet Survey Transiting Exoplanets',
